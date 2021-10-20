@@ -1,11 +1,9 @@
 import React from 'react'
 import './assets/css/styles.css'
-
 function Header() {
 
     return (
-        <div>
-            {/* Start: Header */}
+        
             <div className="header">
             <div className="header--container">
                 {/* logo */}
@@ -17,7 +15,7 @@ function Header() {
                     <span className="header--logo-text">Rarible</span>
                 </div>
                 </a>
-                {/* search box */}
+                
                 <div className="header--searchbox">
                 <div className="search--icon">
                     <img src="./assets/icons/search-solid.svg" alt="" />
@@ -26,7 +24,7 @@ function Header() {
                     <input type="text" placeholder="Collection, item or user" />
                 </form>
                 </div>
-                {/* Menu */}
+                
                 <div className="header--menu">
                 <div className="header--menu-nav">
                     <div className="menu-nav-left">
@@ -73,9 +71,8 @@ function Header() {
                 </div>
             </div>
             </div>
-{/* End: Header */}
+            
 
-        </div>
     )
 }
 export default Header;
