@@ -1,12 +1,12 @@
 import React from 'react'
-import './assets/css/styles.css'
+import './assets/css/Style.css'
 function Header() {
 
     return (
         
             <div className="header">
             <div className="header--container">
-                {/* logo */}
+                
                 <a href="#">
                 <div className="header--logo">
                     <div className="header--logo-img">
