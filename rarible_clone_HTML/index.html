@@ -7,6 +7,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../src/components/assets/css/Style.css">
     <link rel="stylesheet" href="../src/components/assets/css/SlideHp.css">
+    <link rel="stylesheet" href="../src/components/assets/css/TopCollection.css">
 
     <link rel="shortcut icon" href="./assets/media/imgs/favicon.png" type="image/x-icon">
     <title>Rarible_clone_HTMLCSS</title>
@@ -118,14 +119,100 @@
         </div>
     </div>
 
+    <!-- top-collection -->
+    <div class="top-collection">
+        <div class="top-collection--heading">
+            <div class="top-collection--heading-left">
+                <h2>Top collection in</h2>
+                <h2 onClick="collectionDrop()"> 
+                    1 day
+                    <img style="width: 15px;" src="./assets/icons/angle-down-solid.svg" alt="">
+
+                </h2>
+                <div class="collection-day--dropdown" id="collection-drop">
+                    <div class="collection--dropdown">
+                        <p> 3 days</p>
+                        <p> 7 days</p>
+                        <p> 10 days</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="top-collection--heading-right">
+                <button type="button">See all</button>
+            </div>
+        </div>
+        <div class="top-collection--list">
+            <div class="top-collection--item">
+                <p>1</p>
+                <div class="collection--avatar">
+                    <img src="../src/components/assets/media/imgs/content/avatar_collection.png" alt="">
+                </div>
+                <div class="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+            </div>
+            <div class="top-collection--item">
+                <p>1</p>
+                <div class="collection--avatar">
+                    <img src="../src/components/assets/media/imgs/content/avatar_collection.png" alt="">
+                </div>
+                <div class="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+            </div>
+            <div class="top-collection--item">
+                <p>1</p>
+                <div class="collection--avatar">
+                    <img src="../src/components/assets/media/imgs/content/avatar_collection.png" alt="">
+                </div>
+                <div class="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+            </div>
+            <div class="top-collection--item">
+                <p>1</p>
+                <div class="collection--avatar">
+                    <img src="../src/components/assets/media/imgs/content/avatar_collection.png" alt="">
+                </div>
+                <div class="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+            </div>
+            <div class="top-collection--item">
+                <p>1</p>
+                <div class="collection--avatar">
+                    <img src="../src/components/assets/media/imgs/content/avatar_collection.png" alt="">
+                </div>
+                <div class="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Javascript -->
     <script>
         function comunityDrop() {
-          var x = document.getElementById("comunity-dropmenu");
+          var x = document.getElementById("collection-drop");
           if (x.className === "comunity--submenu") {
             x.className += " dropmenu";
           } else {
             x.className = "comunity--submenu";
+          }
+        }
+
+        function collectionDrop() {
+          var y = document.getElementById("comunity-dropmenu");
+          if (y.className === "collection-day--dropdown") {
+            y.className += " collection-dropdown--enable";
+          } else {
+            y.className = "collection-day--dropdown";
           }
         }
     </script>

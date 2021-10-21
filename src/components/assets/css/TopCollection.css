@@ -1,0 +1,79 @@
+.top-collection {
+    margin: 80px 80px 0;
+}
+.top-collection--heading {
+    display: flex;
+    justify-content: space-between;
+}
+.top-collection--heading-left {
+    display: flex;
+    position: relative;
+}
+.top-collection--heading-left h2 {
+    margin-right: 5px;
+}
+.top-collection--heading-left h2:nth-child(2) {
+    color: blue;
+    cursor: pointer;
+}
+.collection-day--dropdown {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 4, 5);
+    border-radius: 8px;
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    font-weight: normal;
+    outline: 0px;
+    box-shadow: rgb(4 4 5 / 20%) 0px 7px 36px -8px;
+    transition: all 0.12s ease-in-out 0s;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 120px;
+    height: auto;
+}
+.collection--dropdown {
+    margin: 10px;
+}
+.collection-day--dropdown p {
+    cursor: pointer;
+    width: 100px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.collection-day--dropdown p:hover {
+    background:#ccc;
+    border-radius: 5px;
+}
+.collection-dropdown--enable {
+    display: flex;
+}
+.top-collection--heading-right button{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    cursor: pointer;
+    background: transparent;
+}
+.top-collection--list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.top-collection--item {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.collection--avatar {
+    margin: 0 20px;
+}
+.collection--avatar img {
+    width: 50px;
+    border-radius: 50px;
+}
+.collection-item--infor {
+}

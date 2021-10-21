@@ -60,7 +60,8 @@ function Header() {
                     <div className="menu-nav-right">
                     <p><a href="#">How it works</a></p>
 
-                    <p id="comunity" onClick={comunityDrop}><a href="#" >Community</a>
+                    <p id="comunity" onClick={comunityDrop}>
+                        Community
                         <img style={{width: '7px'}} src={dropMenuIcon} />
                         
                     </p>
