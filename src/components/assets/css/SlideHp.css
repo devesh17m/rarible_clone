@@ -1,7 +1,9 @@
 .slider {
+    max-width: 1600px;
     display: flex;
-    margin: 30px 80px 0 80px;
-    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+
 }
 
 .slider--highlight {
@@ -25,7 +27,9 @@
 }
 
 .slider--item {
-    width: 270px;
+    max-width: 270px;
+    width: 33.3333%;
+
     height: 270px;
 }
 .slider--item video {
@@ -33,4 +37,5 @@
 }
 .slider--highlight-content video, .slider--item video {
     border-radius: 15px;
+    cursor: pointer;
 }

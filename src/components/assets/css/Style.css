@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header {
-    z-index: 999;
+    
     height: 80px;
 }
 .header--container {
@@ -29,6 +29,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
     transform: translateZ(0px);
@@ -167,9 +168,9 @@ body {
 .menu-nav-left p:not(:last-child), .menu-nav-right p {
     margin-right: 20px;
 }
-.menu-nav-left p, .menu-nav-right p {
+/* .menu-nav-left p, .menu-nav-right p {
     padding-top: 15px;
-}
+} */
 .menu-nav-center {
     height: 24px;
     width: 1px;

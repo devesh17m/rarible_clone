@@ -1,11 +1,13 @@
 import React from 'react'
 import './assets/css/TopCollection.css'
 import avatar from './assets/media/imgs/content/avatar_collection.png'
+import dropMenuIcon from './assets/icons/angle-down-solid.svg'
+
 
 function TopCollection() {
 
     function collectionDrop() {
-        var y = document.getElementById("comunity-dropmenu");
+        var y = document.getElementById("collection-drop");
         if (y.className === "collection-day--dropdown") {
           y.className += " collection-dropdown--enable";
         } else {
@@ -20,7 +22,7 @@ function TopCollection() {
                 <h2>Top collection in</h2>
                 <h2 onClick={collectionDrop}> 
                     1 day
-                    <img style={{width: '15px'}} src="./assets/icons/angle-down-solid.svg" alt="" />
+                    <img style={{width: '15px'}} src={dropMenuIcon} />
                 </h2>
                 <div className="collection-day--dropdown" id="collection-drop">
                     <div className="collection--dropdown">
@@ -85,6 +87,57 @@ function TopCollection() {
                     <p>$1,000,001</p>
                 </div>
                 </div>
+                <div className="top-collection--item">
+                <p>1</p>
+                <div className="collection--avatar">
+                    <img src={avatar} />
+                </div>
+                <div className="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+                </div>
+                <div className="top-collection--item">
+                <p>1</p>
+                <div className="collection--avatar">
+                    <img src={avatar} />
+                </div>
+                <div className="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+                </div>
+                <div className="top-collection--item">
+                <p>1</p>
+                <div className="collection--avatar">
+                    <img src={avatar} />
+                </div>
+                <div className="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+                </div>
+                <div className="top-collection--item">
+                <p>1</p>
+                <div className="collection--avatar">
+                    <img src={avatar} />
+                </div>
+                <div className="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+                </div>
+                <div className="top-collection--item">
+                <p>1</p>
+                <div className="collection--avatar">
+                    <img src={avatar} />
+                </div>
+                <div className="collection-item--infor">
+                    <p>Cool cat</p>
+                    <p>$1,000,001</p>
+                </div>
+                </div>
+                
             </div>
         </div>
 
