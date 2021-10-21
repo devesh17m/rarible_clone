@@ -3,21 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
     font-family: CircularStd;
     src: url('../font/circular-std-medium-500.ttf');
-  }
+  } */
 body {
-    font-family: CircularStd, Helvetica, Arial, sans-serif;
+    height: 1000px;
+    /* font-family: CircularStd, Helvetica, Arial, sans-serif; */
     font-weight: 400;
     line-height: 1.4;
     overflow: hidden scroll;
     max-width: 100%;
     color: rgb(4, 4, 5);
     background: rgb(255, 255, 255);
+    
 }
 
 /* Header */
+.header {
+    z-index: 999;
+    height: 80px;
+}
 .header--container {
     position: fixed;
     top: 0;
@@ -118,7 +124,7 @@ body {
 }
 
 .header--menu {
-    margin-right: 24px;
+    /* margin-right: 24px; */
     border-width: 0px;
     border-style: solid;
     border-color: rgb(4, 4, 5);
@@ -136,6 +142,7 @@ body {
     color: rgba(4, 4, 5, 0.5);
 }
 .header--menu a:hover{
+    cursor: pointer;
     color: rgb(4, 4, 5);
 }
 
@@ -160,6 +167,9 @@ body {
 .menu-nav-left p:not(:last-child), .menu-nav-right p {
     margin-right: 20px;
 }
+.menu-nav-left p, .menu-nav-right p {
+    padding-top: 15px;
+}
 .menu-nav-center {
     height: 24px;
     width: 1px;
@@ -171,12 +181,17 @@ body {
     color: rgba(4, 4, 5, 0.5);
     position: relative;
 }
-#comunity:hover {
+#comunity:hover, #comunity:hover img {
     cursor: pointer;
     color: rgba(4, 4, 5);
+    opacity: 1;
+}
+#comunity img {
+    opacity: 0.5;
+    margin-left: 5px;
 }
 .comunity--submenu {
-    display:none;
+    display: none;
     position: absolute;
     top: 40px;
     right: -60px;
@@ -193,7 +208,7 @@ body {
     box-shadow: rgb(4 4 5 / 20%) 0px 7px 36px -8px;
     transition: all 0.12s ease-in-out 0s;
     width: 270px;
-    height: 310px;
+    height: 280px;
 }
 .comunity--submenu-container {
     padding: 16px 0px;
@@ -220,7 +235,7 @@ body {
 }
 .comunity--submenu-content a{
     color:rgb(4, 4, 5);
-    font-weight:600;
+    font-weight:700;
 }
 .comunity--submenu-social {
     display: flex;
@@ -228,7 +243,7 @@ body {
 .comunity-submenu-social-container {
     display: flex;
     padding: 8px 24px;
-    margin-top: 30px;
+    margin-top: 15px;
     border-top: 1px solid #ccc
 }
 .comunity--submenu-social a{
@@ -237,4 +252,60 @@ body {
 .comunity--submenu-social img{
     width: 20px;
     opacity: 0.5;
+}
+.dropmenu {
+    display: flex !important;
+}
+
+
+.header--menu-btn {
+    display: flex;
+}
+.header--button__long {
+    margin-right: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    background-color: rgba(4, 4, 5, 0.08);
+    line-height: 40px;
+    height: 40px;
+    padding-left: 22px;
+    padding-right: 22px;
+    min-width: 90px;
+    border: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: inherit;
+    transition: all 0.12s ease-in-out 0s;
+    transform-origin: center center;
+    user-select: none;
+    cursor: pointer;
+}
+.header--button__circle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+}
+#create-main {
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    background-size: 200%;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+#create-main:hover{
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    background-position: right center;
+}
+#sign-in, #dark-light {
+    background-color: transparent;
+    border: 1px solid rgba(4, 4, 5, 0.08);
+}
+#sign-in:hover, #dark-light:hover {
+    border: 1px solid rgba(4, 4, 5, 0.3);
 }

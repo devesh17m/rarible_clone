@@ -1,0 +1,36 @@
+.slider {
+    display: flex;
+    margin: 30px 80px 0 80px;
+    overflow: hidden;
+}
+
+.slider--highlight {
+
+}
+
+.slider--highlight-content {
+    width: 560px;
+    height: 560px;
+}
+.slider--highlight-content video {
+    width: 100%;
+}
+
+.slider--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+}
+
+.slider--item {
+    width: 270px;
+    height: 270px;
+}
+.slider--item video {
+    width: 100%;
+}
+.slider--highlight-content video, .slider--item video {
+    border-radius: 15px;
+}
