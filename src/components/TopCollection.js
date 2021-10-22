@@ -2,6 +2,7 @@ import React from 'react'
 import './assets/css/TopCollection.css'
 import avatar from './assets/media/imgs/content/avatar_collection.png'
 import dropMenuIcon from './assets/icons/angle-down-solid.svg'
+import {collectors} from '../data/topCollectionItem'
 
 
 function TopCollection() {
@@ -37,106 +38,21 @@ function TopCollection() {
                 </div>
             </div>
             <div className="top-collection--list">
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
-                <div className="top-collection--item">
-                <p>1</p>
-                <div className="collection--avatar">
-                    <img src={avatar} />
-                </div>
-                <div className="collection-item--infor">
-                    <p>Cool cat</p>
-                    <p>$1,000,001</p>
-                </div>
-                </div>
+                {collectors.map((collector, key) => {
+                    return(
+                        <div key={key} className={collector.itemClassName}>
+                            <p>{key + 1}</p>
+                            <div className={collector.avatarClassName}>
+                                <img src={collector.srcAvatar} />
+                            </div>
+                            <div className={collector.itemInforClassName}>
+                                <p>{collector.name}</p>
+                                <p>{collector.money}</p>
+                            </div>
+                        </div>
+                    );
+                })}
+                
                 
             </div>
         </div>
