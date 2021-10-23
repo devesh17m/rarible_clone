@@ -1,6 +1,9 @@
-.top-collection {
-    max-width: 1600px;
+.top-collection{
     margin: 30px 80px 0;
+}
+.top-collection-container {
+    max-width: 1600px;
+    margin: auto;
     
 }
 .top-collection--heading {
@@ -10,17 +13,20 @@
 .top-collection--heading-left {
     display: flex;
     position: relative;
-}
-.top-collection--heading-left h2 {
     font-size:30px;
-    /* margin-right: 5px; */
+
 }
-.top-collection--heading-left h2:nth-child(2) {
-    margin: 0 5px;
-    color: blue;
+.top-collection--filter {
+    display: flex;
     cursor: pointer;
 }
+.top-collection--filter h4 {
+    margin: 0 10px;
+    color: rgb(0, 102, 255);
+}
+
 .collection-day--dropdown {
+    font-size:16px;
     display: none;
     background-color: rgb(255, 255, 255);
     color: rgb(4, 4, 5);
@@ -54,6 +60,7 @@
     display: flex;
 }
 .top-collection--heading-right button{
+    font-weight: 700;
     padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 40px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import './assets/css/Style.css'
+import './assets/css/Header.css'
 import logo from './assets/media/imgs/logo.png'
 import searchIcon from './assets/icons/search-solid.svg'
 import dropMenuIcon from './assets/icons/angle-down-solid.svg'
@@ -12,18 +12,18 @@ import telegramIcon from './assets/icons/telegram.png'
 import darkIcon from './assets/icons/waning-moon.png'
 
 
-
-
 function Header() {
+    
+    
     function comunityDrop() {
-        
-        var x = document.getElementById("comunity-dropmenu");
+        const x = document.getElementById("comunity-dropmenu");
         if (x.className === "comunity--submenu") {
           x.className += " dropmenu";
         } else {
           x.className = "comunity--submenu";
         }
-      }
+    };
+
 
     return (
             
@@ -59,11 +59,10 @@ function Header() {
                     <div className="menu-nav-center" />
                     <div className="menu-nav-right">
                     <p><a href="#">How it works</a></p>
-
+                
                     <p id="comunity" onClick={comunityDrop}>
-                        Community
-                        <img style={{width: '7px'}} src={dropMenuIcon} />
-                        
+                    Community
+                    <img style={{width: '7px'}} src={dropMenuIcon} />
                     </p>
                     <div className="comunity--submenu" id="comunity-dropmenu">
                         <div className="comunity--submenu-container">
@@ -87,6 +86,9 @@ function Header() {
                         </div>
                         </div>
                     </div>
+                        
+                    
+                    
                     <p />
                     </div>
                 </div>

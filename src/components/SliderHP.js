@@ -9,13 +9,13 @@ function SliderHp() {
     return(
 
         <div className="slider">
+            <div className="slider-container">
             <div className="slider--highlight">
                 <div className="slider--highlight-content">
                     <video autoPlay src={highlightVideo} />
                 </div>
             </div>
             <div className="slider--list">
-                {/* slider--items */}
                 {sliderItem.map((data, key) => {
                 return (
                     <div key={key} className ={data.className} >
@@ -26,6 +26,8 @@ function SliderHp() {
                 })}
                 
                 
+            </div>
+        
             </div>
         </div>
     )
