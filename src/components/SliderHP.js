@@ -12,14 +12,14 @@ function SliderHp() {
             <div className="slider-container">
             <div className="slider--highlight">
                 <div className="slider--highlight-content">
-                    <video autoPlay src={highlightVideo} />
+                    <video autoPlay loop src={highlightVideo} />
                 </div>
             </div>
             <div className="slider--list">
                 {sliderItem.map((data, key) => {
                 return (
                     <div key={key} className ={data.className} >
-                        <video autoPlay={data.autoPlay} 
+                        <video autoPlay={data.autoPlay} loop
                         src={data.src}></video>
                     </div>
                 );

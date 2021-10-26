@@ -1,0 +1,73 @@
+.footer {
+    background: rgba(4, 4, 5, 0.05);
+    margin-top: 30px;
+    height: 350px
+}
+
+.footer-container {
+    /* margin: 30px 80px 0; */
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.footer-container h4 {
+    margin: 20px 0;
+}
+.footer--subcribe {
+    position: relative;
+}
+.footer--subcribe input {
+    background: #80808070;
+    padding: 16px 10px;
+    border-radius: 30px;
+}
+.footer--subcribe button {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    border: transparent;
+    border-radius: 20px;
+    padding: 8px 15px;
+    top: 70px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.footer--extra-menu {
+
+}
+.footer--extra-menu a,
+.footer--community a,
+.footer--extra-menu p,
+.footer--community p {
+    text-decoration: none;
+    color: #808080;
+    margin:10px 0;
+}
+
+.footer--community {
+
+}
+
+.footer--language button {
+    position: relative;
+    width: 200px;
+    color: rgba(4, 4, 5);
+    font-weight: 900;
+    border: transparent;
+    background: #80808070;
+    border-radius: 31px;
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.footer--language button p {
+    margin-right: 10px;
+}
+.footer--language button img {
+    width: 10px;
+}

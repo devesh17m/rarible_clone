@@ -1,31 +1,53 @@
-.top-collection{
+/* common */
+.top-collection,
+.hotbid,
+.best-seller,
+.live-aution, 
+.hot-collection{
     margin: 30px 80px 0;
 }
-.top-collection-container {
+.top-collection-container,
+.hotbid-container,
+.best-seller-container,
+.live-aution-container,
+.hot-collection-container {
     max-width: 1600px;
     margin: auto;
     
 }
-.top-collection--heading {
+/* top collection, best seller */
+.top-collection--heading,
+.best-seller--heading {
     display: flex;
     justify-content: space-between;
 }
-.top-collection--heading-left {
+.hotbid--heading h4,
+.top-collection--heading h4,
+.best-seller--heading h4,
+.live-aution---heading h2{
+    font-size: 30px;
+}
+
+.top-collection--heading-left,
+.best-seller--heading-left {
     display: flex;
     position: relative;
     font-size:30px;
 
 }
-.top-collection--filter {
+.top-collection--filter,
+.best-seller--filter {
     display: flex;
     cursor: pointer;
 }
-.top-collection--filter h4 {
+.top-collection--filter h4,
+.best-seller--filter h4 {
     margin: 0 10px;
     color: rgb(0, 102, 255);
 }
 
-.collection-day--dropdown {
+.collection-day--dropdown,
+.best-seller-day--dropdown {
     font-size:16px;
     display: none;
     background-color: rgb(255, 255, 255);
@@ -43,23 +65,28 @@
     width: 120px;
     height: auto;
 }
-.collection--dropdown {
+.collection--dropdown,
+.best-seller--dropdown {
     margin: 10px;
 }
-.collection-day--dropdown p {
+.collection-day--dropdown p,
+.best-seller-day--dropdown p {
     cursor: pointer;
     width: 100px;
     padding-left: 10px;
     margin-bottom: 10px;
 }
-.collection-day--dropdown p:hover {
+.collection-day--dropdown p:hover,
+.best-seller-day--dropdown p:hover {
     background:#ccc;
     border-radius: 5px;
 }
-.collection-dropdown--enable {
+.collection-dropdown--enable,
+.best-seller-dropdown--enable {
     display: flex;
 }
-.top-collection--heading-right button{
+.top-collection--heading-right button,
+.best-seller--heading-right button{
     font-weight: 700;
     padding: 10px 20px;
     border: 1px solid #ccc;
@@ -67,32 +94,326 @@
     cursor: pointer;
     background: transparent;
 }
-.top-collection--list {
+.top-collection--list,
+.best-seller--list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-left: 20px;
 }
-.top-collection--item {
+.top-collection--item,
+.best-seller--item {
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 20px;
 }
-.top-collection--item p {
+.top-collection--item p,
+.best-seller--item p {
     color: rgb(128, 128, 128);
 }
 
-.collection--avatar {
+.collection--avatar,
+.seller-avatar {
     margin: 0 20px;
 }
-.collection--avatar img {
+.collection--avatar img,
+.seller-avatar img {
     width: 50px;
     border-radius: 50px;
 }
-.collection-item--infor p:first-child{
+.collection-item--infor p:first-child,
+.seller--infor p:first-child{
     font-weight: 900;
     color: rgb(4, 4, 5);
     font-size: 15px;
+}
+
+/* hot bids, live aution */ 
+.hotbid--list,
+.live-aution--list {
+    margin-top: 30px;
+    
+}
+.hotbid--list-container,
+.live-aution--list-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.hotbid--item,
+.live-aution--item {
+    width: 18%;
+    height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 0 10px 20px;
+}
+.hotbid--item-container,
+.live-aution--item-container {
+    width: 100%;
+    height: 100%;
+}
+.hotbid--item-heading,
+.live-aution--item-heading {
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 30px 25px;
+}
+.hotbid--item-heading-left,
+.live-aution--item-heading-left {
+    display: flex;
+}
+
+.collection-avatar--describe,
+.creator-avatar--describe,
+.owner-avatar--describe {
+    top: -30px;
+    left: -30px;
+    width: 150px;
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #80808036;
+}
+.avatar-collection,
+.avatar-creator,
+.avatar-owner {
+    position: relative;
+    width: 30px;
+    margin-left: -10px;
+}
+.avatar-collection img,
+.avatar-creator img,
+.avatar-owner img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.avatar-collection:hover,
+.avatar-creator:hover,
+.avatar-owner:hover {
+    z-index: 11;
+    transform: translateY(-5px);
+}
+.avatar-collection:hover .collection-avatar--describe,
+.avatar-creator:hover .creator-avatar--describe,
+.avatar-owner:hover .owner-avatar--describe{
+    display:block;
+}
+.hotbid--item-heading-right button,
+.live-aution--item-heading-right button{
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(4, 4, 5);
+    font-size: 14px;
+    font-weight:900;
+    padding: 2px 7px 7px;
+}
+.hotbid--item-heading-right button:hover,
+.live-aution--item-heading-right button:hover {
+    border-radius: 15px;
+    background:#808080;
+}
+
+.hotbid--img,
+.live-aution--img {
+    display: flex;
+    justify-content: center;
+}
+.hotbid--img-container,
+.live-aution--img-container {
+    width: 230px;
+    height: 230px;
+}
+.hotbid--img img,
+.live-aution--img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.hotbid--infor,
+.live-aution--infor {
+    margin: 25px 15px 0;
+    font-weight: 900;
+    font-size: 14px;
+}
+.hotbid--infor-title,
+.live-aution--infor-title {
+    margin-bottom: 10px;
+}
+.hotbid--infor-title a,
+.live-aution--infor-title a{
+    text-decoration: none;
+    
+    color: rgb(4, 4, 5);
+}
+.hotbid--infor-detail,
+.live-aution--infor-detail {
+    color: #808080;
+}
+.hotbid--span,
+.live-aution--span {
+    color: rgb(4, 4, 5);
+    margin: 0 5px;
+}
+.hotbid--infor-status,
+.live-aution--infor-status {
+    display: flex;
+    justify-content: space-between;
+}
+.hotbid--infor-status p:first-child,
+.live-aution--infor-status p:first-child {
+    color: rgb(0, 102, 255);
+    line-height: 25px;
+}
+.item--like {
+    color:#808080;
+    cursor: pointer;
+    display: flex;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background: transparent;
+}
+.item--like img {
+    width: 16px;
+    opacity: 0.6;
+    margin-right: 5px;
+}
+.item--like:hover {
+    background:rgb(230, 230, 230);;
+}
+
+/*  */
+.hot-collection--heading {
+
+}
+.hot-collection--heading h4 {
+    font-size: 30px;
+}
+
+.hot-collection--list {
+    padding-top: 20px;
+
+}
+
+.hot-collection--list-container {
+    display: flex;
+}
+
+.hot-collection--item {
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+}
+.hot-collection--item a {
+    text-decoration: none;
+}
+
+.hot-collection--item-container {
+    padding: 10px;
+}
+
+.hot-collection--item-img {
+    width: 100%;
+    position: relative;
+}
+
+.hot-collection--photo-cover {
+    width: 100%;
+}
+.hot-collection--photo-cover img {
+    width: 100%;
+    border-radius: 10px;
+    height: 80px;
+}
+
+.hot-collection--avatar {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.hot-collection--avatar img {
+    width: 50px;
+    border-radius: 40px;
+    border: 3px solid #fff;
+
+}
+
+.hot-collection--item-infor {
+    margin-top: 25px;
+}
+
+.hot-collection--item-title {
+    display: flex;
+    justify-content:center;
+}
+.hot-collection--item-title p {
+    font-size: 14px;
+    color: rgb(4, 4, 5);
+    font-weight: 700;
+}
+
+.hot-collection--item-value {
+    display: flex;
+    justify-content:center;
+}
+.hot-collection--item-value p{
+    font-size: 13px;
+    color:#808080;
+}
+
+/* Explore */
+.hotbid--infor-status a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+}
+.explore--list-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.explore--heading {
+    display: flex;
+    justify-content:space-between;
+}
+.explore--heading-left {
+    display: flex;
+}
+.explore--heading-left button,
+.explore--heading-right button {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 20px;
+    width: 120px;
+    cursor: pointer;
+    background: transparent;
+    color: none(4, 4, 5);
+    font-weight: 900;
+}
+.explore--heading-right {
+
+}
+.explore--heading-right button {
+    padding: 10px 0;
+}
+.explore--loadmore-btn{
+    margin-top: 20px;
+}
+.explore--loadmore-btn button {
+    width: 100%;
+    padding: 12px 0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 102, 255);
+    margin: 4px;
+    border-radius: 30px;
+    border: 1px solid rgb(12, 80, 255);
+    cursor: pointer;
+    font-weight: 700;
+}
+.explore--loadmore-btn button:hover {
+    background: linear-gradient(to right, rgb(12, 80, 255) 0%, rgb(12, 80, 255) 24%, rgb(91, 157, 255) 55.73%, rgb(255, 116, 241) 75%, rgb(255, 116, 241) 100%);
+    color: rgb(2, 4, 5)
 }

@@ -8,7 +8,7 @@
     src: url('../font/circular-std-medium-500.ttf');
   } */
 body {
-    height: 10000px;
+    /* height: 10000px; */
     /* font-family: CircularStd, Helvetica, Arial, sans-serif; */
     font-weight: 400;
     line-height: 1.4;
